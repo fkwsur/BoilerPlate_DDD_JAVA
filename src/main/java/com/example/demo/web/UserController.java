@@ -33,7 +33,7 @@ public class UserController {
         }
 
         @PostMapping("/signup")
-        public ResponseEntity<Object> SignUp(User user) throws Exception {
+        public ResponseEntity<Object> SignUp(@RequestBody User user) throws Exception {
             try {
                 Map<String, String> map = new HashMap<>();
                 Boolean result = userApplicationService.SignUp(user);
