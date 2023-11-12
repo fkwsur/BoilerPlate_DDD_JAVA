@@ -17,11 +17,31 @@ import java.util.*;
 @CrossOrigin(origins = "*", allowedHeaders = "*") // cors허용
 @RequiredArgsConstructor
 public class UserController {
+
+        private final UserApplicationService userApplicationService;
+
         @GetMapping("/hello")
         public ResponseEntity<Object> Hello() throws Exception {
             try {
                 Map<String, String> map = new HashMap<>();
                 map.put("result", "hello world");
+                return new ResponseEntity<>(map, HttpStatus.OK);
+            } catch (Exception e) {
+                // return r.Error(e, "user -hello");
+                throw new Exception(e);
+            }
+        }
+
+        @PostMapping("/signup")
+        public ResponseEntity<Object> SignUp(User user) throws Exception {
+            try {
+                Map<String, String> map = new HashMap<>();
+                Boolean result = userApplicationService.SignUp(user);
+                if(result == true){
+                        map.put("result", "true");
+                }else{
+                        map.put("result", "false");
+                }
                 return new ResponseEntity<>(map, HttpStatus.OK);
             } catch (Exception e) {
                 // return r.Error(e, "user -hello");
