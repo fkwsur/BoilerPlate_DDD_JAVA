@@ -1,4 +1,4 @@
-package com.example.demo.domain.model.User.entity;
+package com.example.demo.domain.model.user.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

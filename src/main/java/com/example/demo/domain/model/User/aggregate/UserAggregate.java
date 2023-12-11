@@ -1,4 +1,4 @@
-package com.example.demo.domain.model.User.aggregate;
+package com.example.demo.domain.model.user.aggregate;
 
 public class UserAggregate {
         

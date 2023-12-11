@@ -1,7 +1,7 @@
 package com.example.demo.application.services;
 
 
-import com.example.demo.domain.model.User.entity.User;
+import com.example.demo.domain.model.user.entity.User;
 import com.example.demo.infrastructure.repository.JpaUserRepository;
 
 import lombok.RequiredArgsConstructor;

@@ -1,7 +1,7 @@
 package com.example.demo.web;
 
-import com.example.demo.domain.model.User.entity.*;
 import com.example.demo.application.services.*;
+import com.example.demo.domain.model.user.entity.*;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
