@@ -2,6 +2,6 @@ git pull origin master
 
 git add .
 
-git commit -m "$(date '+%Y-%m-%d')_기본 파일 세팅"
+git commit -m "$(date '+%Y-%m-%d')_업데이트"
 
 git push origin master
